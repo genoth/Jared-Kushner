@@ -1,3 +1,46 @@
+@font-face {
+  font-family: 'Bebas-Neue';
+  src: url('./BebasNeue_Bold.ttf'); format('truetype')
+}
+.background {
+  background-image: url("./White_House_02.png"); margin: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media {
+
+}
+h3 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 body {
-  background:pink;
+  font-family: lato;
+}
+:visited {
+  color: navy;
+}
+#h1 {
+  font-family: 'Bebas-Neue';
+  font-size: 100px;
+  margin-left: 40px;
+}
+.indent {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.border {
+  border-bottom: black;
+  border-bottom-style: dashed;
+}
+.list {
+  margin-left: 60px;
+}
+.footer {
+  display: block;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
