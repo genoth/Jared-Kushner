@@ -6,23 +6,43 @@
   background-image: url("./White_House_02.png"); margin: auto;
   background-repeat: no-repeat;
   background-size: 100%;
+  z-index: 1;
 }
-@media {
+.table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+  text-align: left;
+}
 
+@media screen and (max-width: 550px) {
+  .table {
+    width: 80%;
+  }
+}
+.shortcol {
+  width: 5%;
+}
+.medshort {
+  width: 10%;
 }
 h3 {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 body {
   font-family: lato;
+  background: #e2e2e2;
 }
 :visited {
   color: navy;
 }
 #h1 {
   font-family: 'Bebas-Neue';
-  font-size: 100px;
+  font-size: 10em;
   margin-left: 40px;
 }
 .indent {
@@ -32,6 +52,7 @@ body {
 .border {
   border-bottom: black;
   border-bottom-style: dashed;
+  padding-bottom: 30px;
 }
 .list {
   margin-left: 60px;
