@@ -8,26 +8,9 @@
   background-size: 100%;
   z-index: 1;
 }
-.table {
-  table-layout: fixed;
-  border-collapse: collapse;
-  width: 100%;
-}
 table, th, td {
   border: 1px solid black;
   text-align: left;
-}
-
-@media screen and (max-width: 550px) {
-  .table {
-    width: 80%;
-  }
-}
-.shortcol {
-  width: 5%;
-}
-.medshort {
-  width: 10%;
 }
 h3 {
   padding-bottom: 5px;
@@ -64,4 +47,14 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  .tablediv {
+    overflow-x:auto;
+  }
+}
+.table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  min-width: 680px;
 }
