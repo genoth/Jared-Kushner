@@ -11,18 +11,14 @@
 .table {
   table-layout: fixed;
   border-collapse: collapse;
-  width: 100%;
+  min-width: 680px;
 }
 table, th, td {
   border: 1px solid black;
   text-align: left;
+  text-size: 1.3em;
 }
 
-@media screen and (max-width: 550px) {
-  .table {
-    width: 80%;
-  }
-}
 .shortcol {
   width: 5%;
 }
