@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Bebas-Neue';
-  src: url('./BebasNeue_Bold.ttf');
+  src: url('../Other/BebasNeue_Bold.ttf');
 }
 .background {
-  background-image: url("./White_House_02.png"); margin: auto;
+  background-image: url("../images/White_House.png"); margin: auto;
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 1;
