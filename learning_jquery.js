@@ -1,54 +1,4 @@
-// console.log("This is working!")
-
-// // $(document).ready(function() {
-// //     $("div").fadeOut(1000);
-// // });
-
-// //    $(document).ready(function() {
-// //        $('some_element').some_function(some_argument);
-// //    });
-
-// $(document).ready(function() {
-//     $('div').mouseenter(function() {
-//         $('div').fadeTo('fast', 0.5);
-//     });
-// });
-
-// console.log("This works!")
-
-// $( "#panel" ).animate({
-//   // CSS properties and values
-// }, 5000, "linear", function() {
-//   //completion handler
-// });
-
-// $(document).ready(function(){
-//   var right = 150;
-// });
-
-// $("#blue").(function() {
-//   $(this).animate({
-//     right: right,
-//     opacity: .2
-//   }, 1500 );
-//   right = right + 150;
-// });
-
-// $("#green").
-
 console.log("This works!")
-
-$(document).ready(function() {
-  $('#img').mouseenter(function() {
-    $('#img').fadeTo('fast', 0.5);
-  });
-});
-
-$( "#panel" ).animate({
-  // CSS properties and values
-}, 5000, "linear", function() {
-  //completion handler
-});
 
 $(document).ready(function(){
   var right = 0;
@@ -56,20 +6,24 @@ $(document).ready(function(){
     $(this).animate({
       right: right,
       opacity: .8
-    }, 1500 );
-    right += 150;
+    }, 1500 ); // speed
+    right += 150; // Distance from right. Starts with 0 and increases by 150px with each item index. So, the pink square is 0px away from the right, yellow square is 150px away, green is 300px away, blue is 450px away.
   });
 });
+
+// Move the squares left towards left and fade them out a little
 $(document).ready(function(){
   var left = 0;
   $(".colors").each(function(i, val){
     $(this).animate({
       left: left,
       opacity: .6
-    }, 1500 );
-    left += 50;
+    }, 1800 ); // speed
+    left += 100; // Distance from left. Starts with 0 and increases by 100px for each item index. So, the pink square is 0px away from the left, yellow square is 100px away, green is 200px away, etc.
   });
 });
+
+// Move the squares down
 $(document).ready(function(){
  var top = 300;
  $(".colors").each(function(i, val){
@@ -81,14 +35,7 @@ $(document).ready(function(){
 });
 });
 
-
-// $(document).ready(function() {
-//   $('#img').mouseenter(function() {
-//     $('#img').fadeTo('fast', 0.5);
-//   });
-// });
-  // $(".colors").each(function(i,val){
-  //   $(this).animate({
-  //     left: left,
-
-  // }
+// Fade out the squares
+$(document).ready(function(){
+  $(".colors").fadeTo('slow', 0.2);
+  });
