@@ -1,12 +1,16 @@
 @font-face {
   font-family: 'Bebas-Neue';
-  src: url('../Other/BebasNeue_Bold.ttf');
+  src: url('../Stylesheets/BebasNeue_Bold.ttf');
 }
 .background {
   background-image: url("../images/White_House.png"); margin: auto;
   background-repeat: no-repeat;
   background-size: 100%;
   z-index: 1;
+}
+#img {
+}
+
 }
 table, th, td {
   border: 1px solid black;
